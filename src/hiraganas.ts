@@ -1,4 +1,9 @@
-const hiraganas = {
+export interface Hiragana {
+  id: number;
+  character: string;
+}
+
+const hiraganas: { [key: string]: Hiragana } = {
   a: { id: 1, character: "あ" },
   i: { id: 2, character: "い" },
   u: { id: 3, character: "う" },
